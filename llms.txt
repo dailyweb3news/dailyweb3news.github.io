@@ -1,0 +1,8 @@
+# Onchain Brief
+
+> Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks.
+
+## Key pages
+- [Homepage](https://dailyweb3news.github.io/): latest reporting and analysis.
+- [About](https://dailyweb3news.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://dailyweb3news.github.io/archive/): everything published.
