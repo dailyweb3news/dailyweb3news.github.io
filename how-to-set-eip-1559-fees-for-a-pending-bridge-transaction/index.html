@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EIP-1559 Fees for a Pending Bridge Transaction</title>
+<meta name="description" content="A pending bridge transaction can often be replaced with a higher-fee transaction using the same nonce; learn how fee caps and tips affect that choice.">
+<link rel="canonical" href="https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Set EIP-1559 Fees for a Pending Bridge Transaction">
+<meta property="og:description" content="A pending bridge transaction can often be replaced with a higher-fee transaction using the same nonce; learn how fee caps and tips affect that choice.">
+<meta property="og:url" content="https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Set EIP-1559 Fees for a Pending Bridge Transaction"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Set EIP-1559 Fees for a Pending Bridge Transaction">
+<meta name="twitter:description" content="A pending bridge transaction can often be replaced with a higher-fee transaction using the same nonce; learn how fee caps and tips affect that choice.">
+<meta property="article:published_time" content="2026-10-04T18:06:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/#webpage",
+      "url": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/",
+      "name": "EIP-1559 Fees for a Pending Bridge Transaction",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/#article",
+      "headline": "How to Set EIP-1559 Fees for a Pending Bridge Transaction",
+      "isAccessibleForFree": true,
+      "description": "A pending bridge transaction can often be replaced with a higher-fee transaction using the same nonce; learn how fee caps and tips affect that choice.",
+      "datePublished": "2026-10-04T18:06:35+00:00",
+      "dateModified": "2026-10-04T18:06:35+00:00",
+      "url": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 531,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Set EIP-1559 Fees for a Pending Bridge Transaction",
+          "item": "https://dailyweb3news.github.io/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">How to Set EIP-1559 Fees for a Pending Bridge Transaction</h1>
+<p class="s6a398d8">A pending bridge transaction can often be replaced with a higher-fee transaction using the same nonce; learn how fee caps and tips affect that choice.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-10-04T18:06:35+00:00">Oct 4, 2026</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img fetchpriority="high" class="sa8dc582" src="/assets/covers/how-to-set-eip-1559-fees-for-a-pending-bridge-transaction.jpg" alt="How to Set EIP-1559 Fees for a Pending Bridge Transaction">
+  </figure>
+  <div class="s7fc6255"><p>If your bridge transaction is pending, you can often speed it up by sending a replacement with the same nonce and higher EIP-1559 fees. The nonce is your account’s transaction number; reusing it tells the network the new transaction replaces the old one. This can help when the fee you set is too low for current demand.</p>
+
+<p>A bridge transfer usually starts with a transaction on the source chain, where you approve tokens or send them to a bridge contract. The transfer cannot move forward until that transaction is included in a block. For more on what pending and failed statuses mean, see this <a href="https://vaultbrief.pages.dev/polygon-bridge-transfers-what-pending-and-failed-mean/" rel="noopener">guide to pending Polygon Bridge transfers</a>. A pending status alone does not mean your funds are lost.</p>
+
+<h2>What do EIP-1559 fees mean?</h2>
+
+<p>EIP-1559 transactions let you set a fee cap and a priority fee, or tip. The base fee is the network’s required fee per unit of gas. Your fee cap is the most you will pay per unit, including the base fee and tip. The tip gives validators an incentive to include your transaction sooner.</p>
+
+<p>You pay based on the fee needed when the transaction is included, up to your cap. A high cap does not mean you automatically pay that full amount. But if the base fee rises above your cap while the transaction waits, it cannot be included until the base fee falls or you replace it with a higher cap.</p>
+
+<h2>How do you speed up a pending bridge transaction?</h2>
+
+<p>Use the wallet’s speed-up option if it offers one. It should create a replacement with the same nonce and bridge action, while letting you raise the fees. Check the details before signing, especially the destination and transaction data. The bridge action should stay the same.</p>
+
+<p>If you are setting fees manually, raise both fields enough to make the replacement eligible and attractive under current network conditions:</p>
+
+<ul>
+<li>Set the fee cap above the current base fee, with room for it to rise before inclusion.</li>
+<li>Set a priority fee that competes with other transactions on that chain.</li>
+<li>Check the wallet’s estimate and the fee market for the source chain, not the destination chain.</li>
+<li>Confirm the replacement uses the original transaction’s nonce.</li>
+</ul>
+
+<p>There is no fixed fee increase that guarantees quick inclusion. A small increase may not help if demand is high, while an unnecessarily large tip can cost more than needed. The wallet may show a maximum possible fee; that is a ceiling, not necessarily what you will pay.</p>
+
+<h2>What if the transaction is still pending?</h2>
+
+<p>Check the transaction on a block explorer for the source chain. If it remains pending, a later transaction from the same account may also wait behind it because transactions are processed in nonce order. Speeding up the earlier transaction can clear that queue.</p>
+
+<p>Some wallets offer a cancellation option. It usually sends a replacement using the same nonce, often back to your own address. If the original transaction is already included, cancellation is too late. A bridge transfer can also fail after inclusion; changing gas fees cannot reverse a confirmed transaction or repair a contract error. In that case, check the bridge status and transaction receipt before trying again.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/aztec-brings-back-zk-money-for-private-ethereum-payments/">Aztec brings back zk.money for private Ethereum payments</a></li>
+    <li><a href="/how-to-bridge-collateral-for-market-shares-on-polygon/">How to bridge collateral for market shares on Polygon</a></li>
+    <li><a href="/why-top-holder-percentages-change-after-a-supply-update/">Why top holder percentages change after a supply update</a></li>
+    <li><a href="/how-to-check-an-unclaimed-polygon-withdrawal/">How to check an unclaimed Polygon withdrawal</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent publication. Not financial advice.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
