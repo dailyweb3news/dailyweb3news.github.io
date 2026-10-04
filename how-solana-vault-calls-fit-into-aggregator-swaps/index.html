@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana vault calls and aggregator swaps | Onchain Brief</title>
+<meta name="description" content="A Solana vault call can put a cross-chain transfer inside a larger swap transaction, letting an aggregator combine a local trade with a Chainflip route.">
+<link rel="canonical" href="https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Solana vault calls fit into aggregator swaps">
+<meta property="og:description" content="A Solana vault call can put a cross-chain transfer inside a larger swap transaction, letting an aggregator combine a local trade with a Chainflip route.">
+<meta property="og:url" content="https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/how-solana-vault-calls-fit-into-aggregator-swaps-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Solana vault calls fit into aggregator swaps"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Solana vault calls fit into aggregator swaps">
+<meta name="twitter:description" content="A Solana vault call can put a cross-chain transfer inside a larger swap transaction, letting an aggregator combine a local trade with a Chainflip route.">
+<meta property="article:published_time" content="2026-10-04T08:59:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/#webpage",
+      "url": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/",
+      "name": "Solana vault calls and aggregator swaps | Onchain Brief",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/#article",
+      "headline": "How Solana vault calls fit into aggregator swaps",
+      "isAccessibleForFree": true,
+      "description": "A Solana vault call can put a cross-chain transfer inside a larger swap transaction, letting an aggregator combine a local trade with a Chainflip route.",
+      "datePublished": "2026-10-04T08:59:53+00:00",
+      "dateModified": "2026-10-04T08:59:53+00:00",
+      "url": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 437,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-solana-vault-calls-fit-into-aggregator-swaps-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-solana-vault-calls-fit-into-aggregator-swaps-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-solana-vault-calls-fit-into-aggregator-swaps-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Solana vault calls fit into aggregator swaps",
+          "item": "https://dailyweb3news.github.io/how-solana-vault-calls-fit-into-aggregator-swaps/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">How Solana vault calls fit into aggregator swaps</h1>
+<p class="s6a398d8">A Solana vault call can put a cross-chain transfer inside a larger swap transaction, letting an aggregator combine a local trade with a Chainflip route.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-10-04T08:59:53+00:00">Oct 4, 2026</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img fetchpriority="high" class="sa8dc582" src="/assets/covers/how-solana-vault-calls-fit-into-aggregator-swaps.jpg" alt="How Solana vault calls fit into aggregator swaps">
+  </figure>
+  <div class="s7fc6255"><p>A Solana vault call lets an app place a cross-chain transfer instruction in the same transaction as a local swap. That gives an aggregator a way to join a trade on a Solana exchange to a transfer handled by Chainflip, provided the aggregator supports the route.</p>
+
+<h2>What does a Solana vault call do?</h2>
+
+<p>It calls a program that takes the swap details and input funds. Chainflip’s Solana Swap Endpoint has separate calls for native SOL and supported tokens. A token swap also needs the user’s token account and the token’s mint address.</p>
+
+<p>The call stores swap details in a temporary on-chain account so Chainflip can process them. The user signs the Solana transaction and pays its fee. For the wider process and what to check when a swap gets stuck, see <a href="https://dev.to/cryptoexplorere/chainflip-2026-how-swaps-work-and-what-to-check-when-stuck-607" rel="noopener">Chainflip swap flow and checks</a>.</p>
+
+<h2>How can an aggregator combine it with a swap?</h2>
+
+<p>A Solana transaction can contain several instructions in order. An aggregator that builds a route could put a local token swap first, then call the vault program with the resulting supported token. A cross-program invocation, or CPI, is one program calling another program’s instruction while a transaction runs.</p>
+
+<p>For example, a route might trade token A for a Chainflip-supported token B on Solana, then pass token B to the vault call for a cross-chain transfer. The aggregator can show that as one route, even though two programs handle the steps. The wallet still signs the transaction.</p>
+
+<ul>
+<li>The first instruction swaps token A for token B.</li>
+<li>The vault call sends token B into the cross-chain route.</li>
+<li>Chainflip processes the swap and sends the destination asset to the specified address.</li>
+</ul>
+
+<p>Because the instructions share one Solana transaction, a failure in one step can cause the transaction to fail as a whole. The cross-chain part still takes place after the Solana transaction; combining instructions does not make both networks settle at once.</p>
+
+<h2>What should a user check before signing?</h2>
+
+<p>Check that the route names the expected input token, destination address and minimum output. The token must be supported by Chainflip, or the call can fail. The program also needs correctly encoded swap details, including values that can change over time. Chainflip recommends getting the instruction parameters through its Broker API rather than assembling them by hand.</p>
+
+<p>Not every aggregator supports this route, and a displayed quote alone does not show that the vault call is included. Review the transaction details before signing. The useful idea is simple: a vault call gives a route builder another instruction it can compose with a local swap, while each step keeps its own program rules and failure conditions.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/what-a-token-approval-does-before-an-avalanche-swap/">What a Token Approval Does Before an Avalanche Swap</a></li>
+    <li><a href="/schedule-treasury-transfers-around-network-maintenance/">Schedule Treasury Transfers Around Network Maintenance</a></li>
+    <li><a href="/how-to-set-slippage-for-a-blackhole-swap/">How to Set Slippage for a Blackhole Swap</a></li>
+    <li><a href="/why-chainflip-signing-retries-can-delay-a-swap/">Why Chainflip signing retries can delay a swap</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent publication. Not financial advice.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
