@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omnichain architecture: how cross-chain apps should choose</title>
+<meta name="description" content="Omnichain apps connect contracts on separate blockchains, but teams must choose how messages are checked, delivered and handled when a chain stalls.">
+<link rel="canonical" href="https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to choose an omnichain architecture">
+<meta property="og:description" content="Omnichain apps connect contracts on separate blockchains, but teams must choose how messages are checked, delivered and handled when a chain stalls.">
+<meta property="og:url" content="https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/how-to-choose-an-omnichain-architecture-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to choose an omnichain architecture"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to choose an omnichain architecture">
+<meta name="twitter:description" content="Omnichain apps connect contracts on separate blockchains, but teams must choose how messages are checked, delivered and handled when a chain stalls.">
+<meta property="article:published_time" content="2026-10-21T09:40:08+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/#webpage",
+      "url": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/",
+      "name": "Omnichain architecture: how cross-chain apps should choose",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/#article",
+      "headline": "How to choose an omnichain architecture",
+      "isAccessibleForFree": true,
+      "description": "Omnichain apps connect contracts on separate blockchains, but teams must choose how messages are checked, delivered and handled when a chain stalls.",
+      "datePublished": "2026-10-21T09:40:08+00:00",
+      "dateModified": "2026-10-21T09:40:08+00:00",
+      "url": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 532,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-choose-an-omnichain-architecture-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-choose-an-omnichain-architecture-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/how-to-choose-an-omnichain-architecture-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to choose an omnichain architecture",
+          "item": "https://dailyweb3news.github.io/how-to-choose-an-omnichain-architecture/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">How to choose an omnichain architecture</h1>
+<p class="s6a398d8">Omnichain apps connect contracts on separate blockchains, but teams must choose how messages are checked, delivered and handled when a chain stalls.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-10-21T09:40:08+00:00">Oct 21, 2026 · 09:40 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/how-to-choose-an-omnichain-architecture.jpg" alt="How to choose an omnichain architecture">
+  </figure>
+  <div class="s7fc6255"><p>An omnichain app lets contracts on separate blockchains coordinate actions by sending messages between them. The chains keep their own rules and records, so the app’s architecture must decide how a message is checked and acted on. In this context, <a href="https://omnichain.network" rel="noopener">omnichain</a> describes an app that can work across chains, rather than a single chain that replaces them.</p>
+
+<h2>What does an omnichain architecture connect?</h2>
+<p>It connects an app’s contracts through a message path between a source chain and a destination chain. A source contract sends a request; a service or network observes it, checks that it is valid, and passes an approved message to the destination. There, a contract carries out the requested action.</p>
+<p>That action might be a contract call, a token transfer, or both. A token bridge moves value between chains, often by locking or burning tokens on one chain and releasing or minting a representation on another. General message passing can carry instructions as well. The distinction matters: an app that only needs to move a token has different needs from one that updates shared state across several chains.</p>
+
+<h2>How should a team choose a message path?</h2>
+<p>Start with the action the app needs, then compare how each architecture checks messages, who can deliver them, and what happens if delivery is delayed. Some systems rely on a network of validators to confirm source-chain activity. Others let an app select or configure a verification module. A relayer, a service that carries messages between chains, may be separate from the party that verifies them.</p>
+<p>For most teams, a supported path with clear verification rules and a working recovery process is a better starting point than building every component themselves. Check that it connects the chains the app needs and supports the message or token flow it uses. Then examine:</p>
+<ul>
+<li>Who verifies that the source-chain event really happened?</li>
+<li>Who can submit the approved message on the destination chain?</li>
+<li>How are destination-chain gas costs paid?</li>
+<li>Can a stuck message be retried, and can it execute only once?</li>
+</ul>
+<p>These details affect both security and day-to-day operation. A fast delivery service can improve the user experience, but speed does not establish whether a message is valid. Verification and delivery are separate jobs, even when one provider handles both.</p>
+
+<h2>What trade-offs matter most?</h2>
+<p>The central trade-off is between control and operational effort. A team can rely on a shared network’s validators and delivery services, or run more of its own infrastructure and set more of its own rules. More control can mean more work: teams must monitor services, fund transactions, and handle failures across chains.</p>
+<p>Every extra chain adds another destination where gas, contract behavior, and transaction timing can differ. A destination chain may be slow or unavailable, leaving a message approved but not yet executed. The app should show that state clearly and provide a safe way to retry. It should also prevent the same instruction from running twice.</p>
+<p>A sound omnichain design begins with the smallest set of chains and actions the app needs. Choose a message path whose verification rules the team can explain, and test how it behaves when delivery is delayed. Add more routes only when they serve a clear user need.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/mastercard-opens-ai-agent-payment-tools-to-developers/">Mastercard opens AI agent payment tools to developers</a></li>
+    <li><a href="/arbswap-four-ways-to-swap-and-supply-liquidity/">Arbswap: four ways to swap and supply liquidity</a></li>
+    <li><a href="/a-small-test-transfer-can-make-a-bridge-trip-safer/">A small test transfer can make a bridge trip safer</a></li>
+    <li><a href="/jpmorgan-brings-its-dollar-deposit-token-to-ethereum/">JPMorgan brings its dollar deposit token to Ethereum</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
