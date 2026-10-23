@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto bridge finality and source chain reorgs</title>
+<meta name="description" content="A bridge may act on a transfer before its source chain is final, so a reorganisation can leave the destination out of step with the original transaction.">
+<link rel="canonical" href="https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A confirmed bridge transfer can still be reversed">
+<meta property="og:description" content="A bridge may act on a transfer before its source chain is final, so a reorganisation can leave the destination out of step with the original transaction.">
+<meta property="og:url" content="https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/a-confirmed-bridge-transfer-can-still-be-reversed-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A confirmed bridge transfer can still be reversed"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A confirmed bridge transfer can still be reversed">
+<meta name="twitter:description" content="A bridge may act on a transfer before its source chain is final, so a reorganisation can leave the destination out of step with the original transaction.">
+<meta property="article:published_time" content="2026-10-23T00:56:00+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/#webpage",
+      "url": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/",
+      "name": "Crypto bridge finality and source chain reorgs",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/#article",
+      "headline": "A confirmed bridge transfer can still be reversed",
+      "isAccessibleForFree": true,
+      "description": "A bridge may act on a transfer before its source chain is final, so a reorganisation can leave the destination out of step with the original transaction.",
+      "datePublished": "2026-10-23T00:56:00+00:00",
+      "dateModified": "2026-10-23T00:56:00+00:00",
+      "url": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 504,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/a-confirmed-bridge-transfer-can-still-be-reversed-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/a-confirmed-bridge-transfer-can-still-be-reversed-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/a-confirmed-bridge-transfer-can-still-be-reversed-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A confirmed bridge transfer can still be reversed",
+          "item": "https://dailyweb3news.github.io/a-confirmed-bridge-transfer-can-still-be-reversed/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">A confirmed bridge transfer can still be reversed</h1>
+<p class="s6a398d8">A bridge may act on a transfer before its source chain is final, so a reorganisation can leave the destination out of step with the original transaction.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-10-23T00:56:00+00:00">Oct 23, 2026 · 00:56 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/a-confirmed-bridge-transfer-can-still-be-reversed.jpg" alt="A confirmed bridge transfer can still be reversed">
+  </figure>
+  <div class="s7fc6255"><p>A bridge transfer can show as confirmed and still be reversed if the source blockchain reorganises before the transfer is final. A reorganisation, or reorg, changes part of a chain’s recent history: blocks are replaced, and a transaction in the old version may disappear. The bridge may already have acted on it. That gap is why a confirmation is not always the same as finality.</p>
+
+<h2>Why can a confirmed transfer be reversed?</h2>
+
+<p>Many blockchains treat recent blocks as increasingly hard to change, rather than instantly permanent. Each new block after a transaction adds a confirmation. A competing version of the chain can still replace recent blocks if the network accepts it as the valid history. The transaction then needs to be included again, or it may no longer happen.</p>
+
+<p>A bridge watches the source chain for a deposit or lock. To avoid making users wait too long, it may act after a set number of confirmations. That threshold lowers the chance of a reorg undoing the deposit, but it does not remove the chance. For a closer look at route choices and how they affect this wait, see our guide to the <a href="https://digitalcryptonews.github.io/choosing-a-super-bridge-route-fees-finality-and-asset-form/" rel="noopener">super bridge</a>. The exact wait and protection depend on the bridge and the chain.</p>
+
+<h2>What happens if the bridge acts too soon?</h2>
+
+<p>If a reorg removes the source transaction after the bridge has released or created assets on the destination chain, the two chains no longer agree about what happened. The destination transfer may remain valid there, even though its source deposit is gone. That can leave the bridge short of backing, or lead it to pause transfers while it checks and repairs its records. The outcome depends on how the bridge is built; a reorg does not always mean a user loses funds.</p>
+
+<p>Some bridges wait for a chain’s own finality signal. Finality means the network has accepted a block as settled under its rules, making reversal much harder than replacing a recent block. Other bridges use a confirmation count or a challenge period, during which activity can be disputed. These methods trade speed for confidence: a longer wait can reduce reorg risk, but delays access to funds.</p>
+
+<h2>How can you judge whether a transfer is final?</h2>
+
+<p>Check what the bridge means by “complete.” A destination balance may appear before the source transaction meets the bridge’s release threshold. The bridge’s status and the chain’s status can differ. Before using transferred funds, check:</p>
+
+<ul>
+<li>Whether the source transaction is still present on the accepted chain.</li>
+<li>How many confirmations the bridge requires, or whether it waits for finality.</li>
+<li>Whether the bridge shows the transfer as settled, rather than pending or processing.</li>
+<li>What the bridge says it does if a reorg occurs after it acts.</li>
+</ul>
+
+<p>For most users, the better choice is to wait for the bridge’s stated completion point, especially before trading or sending the destination assets onward. A “confirmed” label is useful evidence that a transaction was seen. It is not, by itself, proof that the source chain can no longer change.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/why-manta-pacific-withdrawals-can-take-days/">Why Manta Pacific withdrawals can take days</a></li>
+    <li><a href="/swift-blockchain-ledger-readies-17-banks-for-payment-pilots/">Swift blockchain ledger readies 17 banks for payment pilots</a></li>
+    <li><a href="/why-impermanent-loss-can-shrink-your-pool-return/">Why Impermanent Loss Can Shrink Your Pool Return</a></li>
+    <li><a href="/occ-finalizes-genius-act-rules-for-stablecoin-issuers/">OCC finalizes GENIUS Act rules for stablecoin issuers</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
