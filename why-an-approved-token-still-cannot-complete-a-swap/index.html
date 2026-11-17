@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why does a SyncSwap swap fail after approval? Find the cause</title>
+<meta name="description" content="A SyncSwap swap can fail after approval because allowance, balance, gas or quote conditions still block the separate transaction. Read the receipt and retry safely.">
+<link rel="canonical" href="https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why an approved token still cannot complete a swap">
+<meta property="og:description" content="A SyncSwap swap can fail after approval because allowance, balance, gas or quote conditions still block the separate transaction. Read the receipt and retry safely.">
+<meta property="og:url" content="https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/why-an-approved-token-still-cannot-complete-a-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why an approved token still cannot complete a swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why an approved token still cannot complete a swap">
+<meta name="twitter:description" content="A SyncSwap swap can fail after approval because allowance, balance, gas or quote conditions still block the separate transaction. Read the receipt and retry safely.">
+<meta property="article:published_time" content="2026-11-17T22:09:00+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/#webpage",
+      "url": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/",
+      "name": "Why does a SyncSwap swap fail after approval? Find the cause",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/#article",
+      "headline": "Why an approved token still cannot complete a swap",
+      "isAccessibleForFree": true,
+      "description": "A SyncSwap swap can fail after approval because allowance, balance, gas or quote conditions still block the separate transaction. Read the receipt and retry safely.",
+      "datePublished": "2026-11-17T22:09:00+00:00",
+      "dateModified": "2026-11-17T22:09:00+00:00",
+      "url": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 553,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/why-an-approved-token-still-cannot-complete-a-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/why-an-approved-token-still-cannot-complete-a-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/why-an-approved-token-still-cannot-complete-a-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why an approved token still cannot complete a swap",
+          "item": "https://dailyweb3news.github.io/why-an-approved-token-still-cannot-complete-a-swap/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">Why an approved token still cannot complete a swap</h1>
+<p class="s6a398d8">A SyncSwap swap can fail after approval because allowance, balance, gas or quote conditions still block the separate transaction. Read the receipt and retry safely.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-11-17T22:09:00+00:00">Nov 17, 2026 · 22:09 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/why-an-approved-token-still-cannot-complete-a-swap.jpg" alt="Why an approved token still cannot complete a swap">
+  </figure>
+  <div class="s7fc6255"><p>SyncSwap swaps can fail after token approval because approval grants spending permission, while the swap is a separate transaction that still needs the right allowance, funds and valid trade conditions.</p>
+<ul>
+<li><strong>Unsent or pending:</strong> A wallet request may not have been confirmed, or the swap may still be waiting.</li>
+<li><strong>Reverted:</strong> A submitted swap can fail because of allowance, balance, gas, quote changes or token restrictions.</li>
+<li><strong>Retry:</strong> Read the transaction receipt, fix the matching cause, then review fresh terms before confirming again.</li>
+</ul>
+<p>SyncSwap is a decentralized exchange for trading tokens and accessing liquidity pools on supported networks. The <a href="https://syncswap.co" rel="noopener">SyncSwap</a> topic adds background on the service involved; the checks below help identify why a particular swap did not complete.</p>
+<h2>First identify whether the swap was sent or reverted</h2>
+<p>A wallet rejection means the swap request was not submitted, while a pending transaction has not yet finished. A reverted transaction has a receipt with a failed status. Find the transaction hash if one exists, then read its receipt and any error shown by the wallet or transaction viewer before retrying.</p>
+<p>The approval can succeed even when the later swap reverts. ERC-20 allowance records which account owns the tokens and which spender may use them. If the approval transaction succeeded, that permission can remain in place after a separate swap fails. You may be able to reuse it, but first confirm the allowance covers the intended trade and names the correct spender.</p>
+<h2>Match the fix to the failure</h2>
+<ul>
+<li><strong>Wrong account, chain or token:</strong> An allowance or balance on a different account, network or token will not cover this trade. Select the matching wallet account, chain and asset, then check the available balance and allowance.</li>
+<li><strong>Too little allowance or token balance:</strong> The swap may need more permission or more tokens than the account holds. Approve the needed amount if required, and make sure the input balance covers the trade.</li>
+<li><strong>Not enough native funds for gas:</strong> Approval uses gas, and the swap needs its own gas payment. Keep native funds available for the second transaction; a successful approval does not pay for the swap.</li>
+<li><strong>Changed output or expired quote:</strong> A router can enforce a minimum output and a deadline. If the price moves or the quote expires before execution, the swap can revert. Refresh the quote, review the minimum received, and confirm only if the terms still suit you.</li>
+<li><strong>Restricted token transfer:</strong> Some tokens restrict when or how they can move. If the receipt points to a transfer restriction, stop retrying that route unless you can confirm it supports the token.</li>
+</ul>
+<p>When none of these signs fits, do not keep resubmitting the same trade. Preserve the receipt error, recheck the selected account and token, and investigate the specific failure before trying again. Avoid blindly increasing slippage: it changes the minimum output you accept and may not fix an allowance, gas or token restriction.</p>
+<h2>Related questions</h2>
+<h3>Do failed swaps cost gas?</h3>
+<p>A reverted transaction included on-chain consumes gas, even though the swap failed. A wallet request rejected before execution incurs no transaction fee.</p>
+<h3>How do I revoke token approval?</h3>
+<p>Use a trusted allowance tool to set the permission to zero, then confirm the revocation transaction. That separate transaction also needs gas.</p>
+<p>Before retrying, refresh the quote and read the minimum received before confirming. This catches stale terms without needlessly raising slippage.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/how-do-you-redeem-lp-tokens-on-fraxswap/">How do you redeem LP tokens on Fraxswap?</a></li>
+    <li><a href="/which-tokens-can-i-restake-on-eigen-layer-eth-lsts-and-more/">Which tokens can I restake on Eigen Layer? ETH, LSTs and more</a></li>
+    <li><a href="/what-price-impact-means-when-a-dex-swap-moves-the-pool/">What Price Impact Means When a DEX Swap Moves the Pool</a></li>
+    <li><a href="/us-gets-court-authority-over-1-2bn-in-stolen-binance-crypto/">US gets court authority over $1.2bn in stolen Binance crypto</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
