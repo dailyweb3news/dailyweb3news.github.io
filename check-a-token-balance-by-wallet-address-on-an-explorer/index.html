@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check a token balance by wallet address: quantity</title>
+<meta name="description" content="To check a token balance by wallet address, search the right chain’s explorer, match the token contract and read its quantity; query balanceOf if the listing is missing or stale.">
+<link rel="canonical" href="https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Check a Token Balance by Wallet Address on an Explorer">
+<meta property="og:description" content="To check a token balance by wallet address, search the right chain’s explorer, match the token contract and read its quantity; query balanceOf if the listing is missing or stale.">
+<meta property="og:url" content="https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/check-a-token-balance-by-wallet-address-on-an-explorer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Check a Token Balance by Wallet Address on an Explorer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check a Token Balance by Wallet Address on an Explorer">
+<meta name="twitter:description" content="To check a token balance by wallet address, search the right chain’s explorer, match the token contract and read its quantity; query balanceOf if the listing is missing or stale.">
+<meta property="article:published_time" content="2026-11-18T21:46:49+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/#webpage",
+      "url": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/",
+      "name": "How to check a token balance by wallet address: quantity",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/#article",
+      "headline": "Check a Token Balance by Wallet Address on an Explorer",
+      "isAccessibleForFree": true,
+      "description": "To check a token balance by wallet address, search the right chain’s explorer, match the token contract and read its quantity; query balanceOf if the listing is missing or stale.",
+      "datePublished": "2026-11-18T21:46:49+00:00",
+      "dateModified": "2026-11-18T21:46:49+00:00",
+      "url": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 435,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/check-a-token-balance-by-wallet-address-on-an-explorer-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/check-a-token-balance-by-wallet-address-on-an-explorer-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/check-a-token-balance-by-wallet-address-on-an-explorer-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Check a Token Balance by Wallet Address on an Explorer",
+          "item": "https://dailyweb3news.github.io/check-a-token-balance-by-wallet-address-on-an-explorer/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">Check a Token Balance by Wallet Address on an Explorer</h1>
+<p class="s6a398d8">To check a token balance by wallet address, search the right chain’s explorer, match the token contract and read its quantity; query balanceOf if the listing is missing or stale.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-11-18T21:46:49+00:00">Nov 18, 2026 · 21:46 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/check-a-token-balance-by-wallet-address-on-an-explorer.jpg" alt="Check a Token Balance by Wallet Address on an Explorer">
+  </figure>
+  <div class="s7fc6255"><p>A token balance belongs to a wallet address on one blockchain, so search that address on the matching explorer, find the token by contract address and read its quantity. The address, chain and contract must match; the displayed units should then show the current token quantity.</p>
+<p>Have the public wallet address, the chain it is on and the trusted token contract address ready. You do not need to connect a wallet to view an address on an explorer.</p>
+<p>For a lifi bridge transfer, look up the destination address on the destination chain. To <a href="https://graph.org/How-to-Track-a-lifi-bridge-Transaction-Confirm-Receipt-11-17" rel="noopener">confirm a lifi bridge transfer arrived</a>, use that same address and chain before checking the token holding.</p>
+<h2>Find the token holding</h2>
+<ol>
+<li>Open the relevant chain’s block explorer, such as Etherscan for Ethereum, and paste the public address into its search bar. The address page appears without asking you to connect your wallet.</li>
+<li>Open the address’s token holdings or assets section. Find the token using its contract address, rather than relying on the name or symbol, which may be shared by different tokens. The matching row identifies the contract and its quantity. Etherscan’s Token Holdings lists both the contract address and quantity columns (<a href="https://info.etherscan.com/exploring-the-token-holdings-page/" rel="nofollow noopener">Etherscan Token Holdings</a>).</li>
+<li>Read the Quantity for the matching contract. For instance, after a lifi bridge transfer, the destination chain’s holding shows how many of that token the destination address has. A token balance can differ between chains, so a quantity shown on the source chain is not the destination balance.</li>
+<li>Compare the displayed quantity with the address, chain and contract you intended to check. When all four details—the address, chain, contract and displayed units—match, you have the current balance shown by the explorer.</li>
+</ol>
+<h2>Query the contract if the holding is missing or stale</h2>
+<p>An explorer’s holdings list can lag behind a contract’s actual balance. Some token contracts do not emit the transfer events explorers use to update their holdings, so a row may be missing or its quantity may be out of date.</p>
+<ol>
+<li>Open the trusted token contract page on the same chain and select its verified Read Contract tab. Find <strong>balanceOf</strong>, the ERC-20 function that returns an address’s raw token balance. Enter the public wallet address and query it. Etherscan describes this direct lookup for checking a current balance (<a href="https://info.etherscan.com/non-standard-token-contracts/" rel="nofollow noopener">Etherscan on non-standard tokens</a>).</li>
+<li>Convert the raw result into displayed token units using the token’s <strong>decimals</strong> value. Divide the raw balance by 10 raised to the decimals value. For instance, with 6 decimals, divide by 10⁶. The result is the human-readable quantity; compare it with the holding row when that row is available.</li>
+</ol></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/a-permit-signature-sets-a-token-spending-limit/">A Permit Signature Sets a Token Spending Limit</a></li>
+    <li><a href="/us-gets-court-authority-over-1-2bn-in-binance-theft/">US gets court authority over $1.2bn in Binance theft</a></li>
+    <li><a href="/why-an-approved-token-still-cannot-complete-a-swap/">Why an approved token still cannot complete a swap</a></li>
+    <li><a href="/how-do-you-redeem-lp-tokens-on-fraxswap/">How do you redeem LP tokens on Fraxswap?</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
