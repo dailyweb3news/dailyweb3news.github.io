@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Should I use fast mode on my MEV protection RPC? Trade-offs</title>
+<meta name="description" content="Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep…">
+<link rel="canonical" href="https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Should I use fast mode on my MEV protection RPC? Trade-offs">
+<meta property="og:description" content="Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep…">
+<meta property="og:url" content="https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Should I use fast mode on my MEV protection RPC? Trade-offs"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Should I use fast mode on my MEV protection RPC? Trade-offs">
+<meta name="twitter:description" content="Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep…">
+<meta property="article:published_time" content="2026-11-21T04:07:21+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/#webpage",
+      "url": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/",
+      "name": "Should I use fast mode on my MEV protection RPC? Trade-offs",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/#article",
+      "headline": "Should I use fast mode on my MEV protection RPC? Trade-offs",
+      "isAccessibleForFree": true,
+      "description": "Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep…",
+      "datePublished": "2026-11-21T04:07:21+00:00",
+      "dateModified": "2026-11-21T04:07:21+00:00",
+      "url": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 622,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Should I use fast mode on my MEV protection RPC? Trade-offs",
+          "item": "https://dailyweb3news.github.io/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">Should I use fast mode on my MEV protection RPC? Trade-offs</h1>
+<p class="s6a398d8">Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep…</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-11-21T04:07:21+00:00">Nov 21, 2026 · 04:07 UTC</time><span>4 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/should-i-use-fast-mode-on-my-mev-protection-rpc-trade-offs.jpg" alt="Should I use fast mode on my MEV protection RPC? Trade-offs">
+  </figure>
+  <div class="s7fc6255"><p>Enable fast mode on Flashbots Protect when getting a transaction included quickly matters more than maximizing its refund or limiting who sees it; keep the default endpoint for routine swaps. Fast mode sends the pending transaction to all builders registered with Flashbots, which increases the chance that the builder winning a slot through MEV-Boost has it in time, while giving the validator a larger share of the backrun value.</p><h2>Fast mode widens builder reach and reduces your refund</h2><p>The default Protect endpoint sends a transaction to fewer builders, while fast mode sends it to every builder registered with Flashbots. More builders that may win a block can consider including it, so fast mode raises the odds of timely inclusion; it cannot guarantee that the transaction lands in the next block.</p><p>This broader reach comes with a privacy trade-off: each additional builder receives the pending transaction before inclusion. Every one is another party you trust not to leak it. Read the registered builder list before enabling fast mode, and weigh that wider exposure against the value of quicker inclusion.</p><p>Fast mode also changes how much backrun value returns to you. The validator receives a larger share of the MEV-Share backrun payment, so less of that value comes back as your refund. A refund percentage you set does not remove this trade-off: the validator's share is part of the value available to return to you.</p><p>For a DeFi user weighing the settings while using flashbots.app, the practical choice is whether a particular transaction needs the extra builder reach enough to accept the smaller refund. That is the same trade-off behind <a href="https://www.tumblr.com/serenewitness/833672765769924608/what-is-flashbots" rel="noopener">Flashbots</a>: broader access to potential block builders may help a time-sensitive transaction, while the default is a better fit when speed is less urgent.</p><h2>Use fast mode when a delay could cost more than the refund</h2><p>Choose the endpoint by asking what a missed block would cost you. Fast mode fits a transaction whose value falls quickly with delay; the default fits one that can wait without a meaningful penalty.</p><p>Say you need to top up collateral while a lending position is close to liquidation. A delay could leave the position exposed, so broader builder reach may be worth accepting a smaller MEV-Share refund and trusting more builders with the transaction. In that case, choose fast mode.</p><p>Now take the same wallet making a routine token swap, with no deadline or liquidation risk. A modest delay is unlikely to change the outcome, so the extra builder exposure and smaller refund have little upside. Keep the default endpoint.</p><p>In both cases, inclusion still depends on a builder winning the slot through MEV-Boost and receiving the transaction in time. Fast mode improves the chance that a winning builder has it; it does not control which builder wins or promise inclusion. Use it to improve the odds when the cost of waiting is high.</p><p>A simple rule is to compare the cost of delay with the refund you give up and the additional builders you trust. If delay could cause liquidation or another material loss, use fast mode. If the transaction is routine and can wait, use the default.</p><h2>Related</h2><h3>What is the Flashbots Protect fast mode URL?</h3><p>The fast mode endpoint is rpc.flashbots.net/fast. It sends the transaction to all builders registered with Flashbots.</p><h3>Does fast mode lower my MEV-Share refund?</h3><p>It can: fast mode gives the validator a larger share of the backrun payment, leaving less value to return to you.</p><h3>Can fast mode be combined with custom builder settings?</h3><p>Fast mode's defining behavior is sending to all registered builders. Treat a custom builder list as a separate control, and confirm the behavior of your specific RPC configuration before relying on the two settings together.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/variational-raises-110-million-in-bain-led-series-b/">Variational raises $110 million in Bain-led Series B</a></li>
+    <li><a href="/how-to-manually-claim-a-bridged-transfer-on-ethereum-after-a-delay/">How to manually claim a bridged transfer on Ethereum after a delay</a></li>
+    <li><a href="/a-non-custodial-wallet-for-taking-control-of-your-crypto/">A non-custodial wallet for taking control of your crypto</a></li>
+    <li><a href="/reverted-vs-out-of-gas-know-what-you-paid/">Reverted vs out of gas: know what you paid</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
