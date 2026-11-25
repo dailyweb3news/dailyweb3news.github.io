@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price impact vs slippage: what decides swap cost?</title>
+<meta name="description" content="Price impact vs slippage: price impact sets the quoted cost; slippage is later pool movement your tolerance allows. See how each changes swap output.">
+<link rel="canonical" href="https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Price impact vs slippage: how a swap’s cost changes">
+<meta property="og:description" content="Price impact vs slippage: price impact sets the quoted cost; slippage is later pool movement your tolerance allows. See how each changes swap output.">
+<meta property="og:url" content="https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/price-impact-vs-slippage-how-a-swaps-cost-changes-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Price impact vs slippage: how a swap’s cost changes"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Price impact vs slippage: how a swap’s cost changes">
+<meta name="twitter:description" content="Price impact vs slippage: price impact sets the quoted cost; slippage is later pool movement your tolerance allows. See how each changes swap output.">
+<meta property="article:published_time" content="2026-11-25T10:03:36+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/#webpage",
+      "url": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/",
+      "name": "Price impact vs slippage: what decides swap cost?",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/#article",
+      "headline": "Price impact vs slippage: how a swap’s cost changes",
+      "isAccessibleForFree": true,
+      "description": "Price impact vs slippage: price impact sets the quoted cost; slippage is later pool movement your tolerance allows. See how each changes swap output.",
+      "datePublished": "2026-11-25T10:03:36+00:00",
+      "dateModified": "2026-11-25T10:03:36+00:00",
+      "url": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 599,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/price-impact-vs-slippage-how-a-swaps-cost-changes-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/price-impact-vs-slippage-how-a-swaps-cost-changes-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/price-impact-vs-slippage-how-a-swaps-cost-changes-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Price impact vs slippage: how a swap’s cost changes",
+          "item": "https://dailyweb3news.github.io/price-impact-vs-slippage-how-a-swaps-cost-changes/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">Price impact vs slippage: how a swap’s cost changes</h1>
+<p class="s6a398d8">Price impact vs slippage: price impact sets the quoted cost; slippage is later pool movement your tolerance allows. See how each changes swap output.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-11-25T10:03:36+00:00">Nov 25, 2026 · 10:03 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/price-impact-vs-slippage-how-a-swaps-cost-changes.jpg" alt="Price impact vs slippage: how a swap’s cost changes">
+  </figure>
+  <div class="s7fc6255"><p>Price impact vs slippage comes down to when the cost changes: price impact shapes your quote, while slippage is the further movement your tolerance allows before execution.</p>
+<h2>How price impact and slippage change your quote</h2>
+<p>Price impact is the price move your own trade causes in a pool. In a constant-product pool, the reserves follow x × y = k. For reserves x and y, adding Δx of one token returns y·Δx/(x+Δx) of the other before fees. The output is lower than it would be at the starting pool price because your trade changes the reserve balance.</p>
+<p>Say you sell 1% of a pool’s x reserve. The formula gives an output about 0.99% below the starting-price estimate, before fees. That is price impact, and it is already reflected in the quote you see before signing. A deeper pool or smaller trade reduces it.</p>
+<p>Slippage is a later change: other trades can shift the pool after you receive a quote but before your swap executes. Slippage tolerance sets how far the output may fall from that quote. On SunSwap, the swap screen shows price impact and a minimum received derived from your tolerance. Before signing, compare those figures; for context on who controls the swap and keys, read how <a href="https://graph.org/Is-SunSwap-Really-Decentralized-Swaps-Keys-and-Control-11-23" rel="noopener">SunSwap handles swaps and keys</a>.</p>
+<p>If the quote is Q and tolerance is t, minimum received = Q × (1 − t). Since Q already includes price impact, the minimum is not based on the starting pool price. A 1% tolerance trims the quoted output by another 1%. Against the starting market price, the worst-case shortfall is approximately impact plus tolerance; more exactly, the two reductions compound. Raising tolerance does not reduce impact. Only a smaller trade or deeper pool does.</p>
+<p>The distinction matters when deciding what to change: high impact means the trade is large for that pool; a wide tolerance means you accept more movement after the quote. A tight tolerance can make a swap fail if the pool moves too far, while a loose one allows a lower output.</p>
+<h2>Related questions</h2>
+<p>The fee and front-running can affect the amount you receive, but they are not the same thing as price impact.</p>
+<h3>Is the swap fee included in price impact?</h3>
+<p>The fee is a separate cost from the reserve-driven price impact. The formula above shows output before the fee; the actual quote can reflect both the fee and price impact. Read the fee and output figures separately where the swap screen shows them.</p>
+<h3>Does front-running cause slippage?</h3>
+<p>Front-running can cause slippage when another trade executes ahead of yours and changes the pool before your swap. Your tolerance sets the maximum output drop you accept; if the move exceeds it, the swap fails.</p>
+<h2>What to do before a SunSwap swap</h2>
+<p>Use the quote to judge price impact, then use minimum received to judge the execution floor your tolerance permits.</p>
+<h3>What slippage tolerance should I set on SunSwap?</h3>
+<p>Set a tolerance that allows for expected movement while keeping minimum received acceptable to you. A tighter setting limits the output drop but can cause a revert if the pool changes before execution.</p>
+<h3>Why does SunSwap warn about high price impact?</h3>
+<p>High impact means your trade would move the pool price substantially at the quoted size. Check the pool depth and consider lowering the trade amount before signing.</p>
+<h3>Does splitting a large trade reduce price impact?</h3>
+<p>Smaller trades can have less impact per swap, but splitting does not guarantee a better total output: the pool can move between trades, and fees may apply to each. Compare the combined expected output before choosing.</p></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/how-to-withdraw-bitcoin-to-your-own-wallet-and-confirm-it/">How to withdraw Bitcoin to your own wallet and confirm it</a></li>
+    <li><a href="/slippage-tolerance-set-a-safe-minimum-on-a-dex/">Slippage Tolerance: Set a Safe Minimum on a DEX</a></li>
+    <li><a href="/why-did-sending-to-a-new-tron-address-cost-extra-trx-the-one-time-acco/">Why did sending to a new TRON address cost extra TRX? The one-time account fee</a></li>
+    <li><a href="/what-do-you-need-to-bridge-crypto-from-a-self-custody-wallet/">What Do You Need to Bridge Crypto From a Self-Custody Wallet?</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
