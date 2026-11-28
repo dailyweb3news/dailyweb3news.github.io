@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge daily limit vs execution daily limit: which blocks?</title>
+<meta name="description" content="Bridge daily limit vs execution daily limit: one can revert a deposit; the other can stop arrival after it mines. Find the failed step and choose the right recovery.">
+<link rel="canonical" href="https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17120f">
+<meta name="author" content="The Onchain Brief Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Onchain Brief">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Which Gnosis Bridge limit stopped my transfer?">
+<meta property="og:description" content="Bridge daily limit vs execution daily limit: one can revert a deposit; the other can stop arrival after it mines. Find the failed step and choose the right recovery.">
+<meta property="og:url" content="https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/">
+<meta property="og:image" content="https://dailyweb3news.github.io/assets/covers/which-gnosis-bridge-limit-stopped-my-transfer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Which Gnosis Bridge limit stopped my transfer?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Which Gnosis Bridge limit stopped my transfer?">
+<meta name="twitter:description" content="Bridge daily limit vs execution daily limit: one can revert a deposit; the other can stop arrival after it mines. Find the failed step and choose the right recovery.">
+<meta property="article:published_time" content="2026-11-28T08:48:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/s1589fb8a00.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Onchain Brief" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dailyweb3news.github.io/#org",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyweb3news.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyweb3news.github.io/editorial-standards/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyweb3news.github.io/#website",
+      "name": "Onchain Brief",
+      "url": "https://dailyweb3news.github.io/",
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Crypto news on Bitcoin, Ethereum, DeFi, stablecoins, exchanges, wallets, security incidents, regulation and new blockchain networks."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/#webpage",
+      "url": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/",
+      "name": "Bridge daily limit vs execution daily limit: which blocks?",
+      "isPartOf": {
+        "@id": "https://dailyweb3news.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/#article",
+      "headline": "Which Gnosis Bridge limit stopped my transfer?",
+      "isAccessibleForFree": true,
+      "description": "Bridge daily limit vs execution daily limit: one can revert a deposit; the other can stop arrival after it mines. Find the failed step and choose the right recovery.",
+      "datePublished": "2026-11-28T08:48:35+00:00",
+      "dateModified": "2026-11-28T08:48:35+00:00",
+      "url": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyweb3news.github.io/#org"
+      },
+      "wordCount": 474,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/which-gnosis-bridge-limit-stopped-my-transfer-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/which-gnosis-bridge-limit-stopped-my-transfer-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyweb3news.github.io/assets/covers/which-gnosis-bridge-limit-stopped-my-transfer-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyweb3news.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Which Gnosis Bridge limit stopped my transfer?",
+          "item": "https://dailyweb3news.github.io/which-gnosis-bridge-limit-stopped-my-transfer/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s419b93d" href="#main">Skip to the article</a>
+<header class="s1cfa4bb">
+  <div class="sc8b26d8">
+    <a class="s9f33b0a" href="/">Onchain Brief</a>
+    <p class="sed66f8c">News from across crypto</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sd47c1cf sed49508">
+  <header class="s110ea8f">
+    <h1 class="s2525dc5">Which Gnosis Bridge limit stopped my transfer?</h1>
+<p class="s6a398d8">Bridge daily limit vs execution daily limit: one can revert a deposit; the other can stop arrival after it mines. Find the failed step and choose the right recovery.</p>    <div class="sf87e9b6 s17717aa"><span>The Onchain Brief Editors</span><time datetime="2026-11-28T08:48:35+00:00">Nov 28, 2026 · 08:48 UTC</time><span>3 min read</span></div>
+  </header>
+  <figure class="s378f5f8">
+    <img width="1200" height="630" fetchpriority="high" class="sa8dc582" src="/assets/covers/which-gnosis-bridge-limit-stopped-my-transfer.jpg" alt="Which Gnosis Bridge limit stopped my transfer?">
+  </figure>
+  <div class="s7fc6255"><p>Read the transaction state first: a reverted deposit points to <em>dailyLimit</em>; a mined deposit with no arrival points to <em>executionDailyLimit</em>. Each mediator tracks its own daily total for each token, so the limit on one chain does not tell you whether the other chain can release the transfer.</p>
+<p>Gnosis Bridge is a concrete case of this split: Omnibridge and Arbitrary Message Bridge use mediators to move tokens and messages between Ethereum and Gnosis Chain. That cross-chain routing makes the <a href="https://paragraph.com/@owofadanuvoj67/how-do-daily-limits-on-token-bridges-work-at-0000-utc" rel="noopener">bridge to gnosis chain</a> a useful example of why the sending and receiving limits must be checked separately.</p>
+<h2>Which chain's limit did the transfer hit?</h2>
+<p><em>dailyLimit</em> is checked by the sending chain's mediator when you deposit. It caps the amount that can leave that chain per day for a token. A breach reverts the deposit, so the tokens stay in your wallet. There is no destination transfer to recover.</p>
+<p>Say you submit a large deposit and the transaction reverts. Check its receipt in GnosisScan or Etherscan. Then use the sending mediator's Read Contract view to compare that token's <em>dailyLimit</em> with <em>totalSpentPerDay</em>. These values are set per token by bridge governance and vary. Retry when the daily total allows it, or send a smaller amount. Check the current values again before resending.</p>
+<p><em>executionDailyLimit</em> is checked by the receiving chain's mediator when it processes the incoming message. It caps what that chain can release per day for the token. The deposit can be mined successfully, yet the message can fail on arrival because the receiving mediator has reached its limit.</p>
+<p>For a mined deposit with no arriving tokens, trace the transaction and message in GnosisScan or Etherscan. Confirm that the source transaction succeeded and the destination execution failed. In the receiving mediator's Read Contract view, compare the token's <em>executionDailyLimit</em> with <em>totalExecutedPerDay</em>. Once the failed message is visible, call <em>requestFailedMessageFix</em> on the source-side mediator to refund. A new attempt needs room under the relevant daily limit; check both sides before sending again.</p>
+<h2>What else can block a bridge transfer?</h2>
+<h3>What is maxPerTx on a bridge?</h3>
+<p><em>maxPerTx</em> is a per-transfer ceiling. It differs from a daily limit, which measures the token total used over the day. A transfer can fit under <em>maxPerTx</em> and still exceed the remaining daily allowance.</p>
+<h3>Can splitting a transfer get under a bridge limit?</h3>
+<p>Splitting may bring each part under <em>maxPerTx</em>, but it does not create more daily capacity. The parts still count toward the token's daily total on the sending chain and, when executed, on the receiving chain. Read both mediators' values before resending.</p>
+<ul>
+<li>A reverted deposit means the source-side <em>dailyLimit</em> blocked it; funds stay in the wallet.</li>
+<li>A mined deposit with failed arrival points to the receiving-side <em>executionDailyLimit</em>; use <em>requestFailedMessageFix</em> on the source mediator to refund.</li>
+<li>Compare each per-token limit with its daily total before another attempt.</li>
+</ul></div>
+</article>
+<section class="s6887ddf sed49508" aria-labelledby="related-h">
+  <h2 id="related-h" class="s27e9a30">Related stories</h2>
+  <ul class="s47ad767">
+    <li><a href="/eu-proposal-targets-russian-crypto-networks-in-new-sanctions-round/">EU proposal targets Russian crypto networks in new sanctions round</a></li>
+    <li><a href="/bridge-aggregators-how-they-widen-your-route-choice/">Bridge aggregators: how they widen your route choice</a></li>
+    <li><a href="/mayan-vs-debridge-routes-for-evm-to-solana-transfers/">Mayan vs deBridge routes for EVM-to-Solana transfers</a></li>
+    <li><a href="/ethereum-mainnet-vs-layer-2-should-you-move-a-small-balance/">Ethereum Mainnet vs Layer 2: Should You Move a Small Balance?</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="sfa053de">
+  <div class="s9d244c7 sed49508">
+    <p class="s71b1618">Onchain Brief</p>
+    <nav class="sd208f36" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-standards/">Editorial standards</a></li>      </ul>
+    </nav>
+    <p class="s7ffc239">Independent crypto coverage, for information only.</p>
+    <p class="s0a4a582">© 2026 Onchain Brief</p>
+  </div>
+</footer>
+</body>
+</html>
